@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <declare-styleable name="PhotoStackView">
+        <attr name="spin" format="integer" max="360" min="0" />
+        <attr name="stack_size_min" format="integer" max="6" min="0" />
+        <attr name="stack_size_max" format="integer" max="6" min="0" />
+        <attr name="show_stack_gap" format="boolean" />
+        <attr name="show_stack_fade" format="boolean" />
+        <attr name="colour" format="color" />
+        <attr name="shadow_color" format="color" />
+    </declare-styleable>
+
     <string name="app_name">PhotoStackView</string>
 
     <style name="AppBaseTheme" parent="android:Theme.Light">

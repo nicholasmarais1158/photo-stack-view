@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PhotoStackView">
+        <attr name="spin" format="integer" min="0" max="360"/>
+        <attr name="stack_size_min" format="integer" min="0" max="6"/>
+        <attr name="stack_size_max" format="integer" min="0" max="6"/>
+        <attr name="show_stack_gap" format="boolean"/>
+        <attr name="show_stack_fade" format="boolean"/>
+        <attr name="colour" format="color"/>
+        <attr name="shadow_color" format="color"/>
+    </declare-styleable>
+</resources>

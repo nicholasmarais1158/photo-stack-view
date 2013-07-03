@@ -9,12 +9,71 @@ package com.marais.photostackview;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int colour=0x7f010005;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shadow_color=0x7f010006;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int show_stack_fade=0x7f010004;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int show_stack_gap=0x7f010003;
+        public static final int spin=0x7f010000;
+        public static final int stack_size_max=0x7f010002;
+        public static final int stack_size_min=0x7f010001;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
     }
+    public static final class id {
+        public static final int activity_imagethumbview_height_label=0x7f06000c;
+        public static final int activity_imagethumbview_height_mode=0x7f060007;
+        public static final int activity_imagethumbview_height_mode_custom=0x7f06000a;
+        public static final int activity_imagethumbview_height_mode_match=0x7f060009;
+        public static final int activity_imagethumbview_height_mode_wrap=0x7f060008;
+        public static final int activity_imagethumbview_height_size=0x7f06000b;
+        public static final int activity_imagethumbview_image=0x7f060000;
+        public static final int activity_imagethumbview_spin=0x7f06000d;
+        public static final int activity_imagethumbview_spin_label=0x7f06000e;
+        public static final int activity_imagethumbview_stack_fade=0x7f060010;
+        public static final int activity_imagethumbview_stack_gap=0x7f06000f;
+        public static final int activity_imagethumbview_width_label=0x7f060006;
+        public static final int activity_imagethumbview_width_mode=0x7f060001;
+        public static final int activity_imagethumbview_width_mode_custom=0x7f060004;
+        public static final int activity_imagethumbview_width_mode_match=0x7f060003;
+        public static final int activity_imagethumbview_width_mode_wrap=0x7f060002;
+        public static final int activity_imagethumbview_width_size=0x7f060005;
+    }
+    public static final class layout {
+        public static final int activity_photo_stack_view=0x7f030000;
+    }
     public static final class string {
-        public static final int app_name=0x7f030000;
+        public static final int app_name=0x7f040000;
     }
     public static final class style {
         /** 
@@ -25,9 +84,113 @@ public final class R {
  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f040000;
+        public static final int AppBaseTheme=0x7f050000;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f040001;
+        public static final int AppTheme=0x7f050001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a PhotoStackView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PhotoStackView_colour com.marais.photostackview:colour}</code></td><td></td></tr>
+           <tr><td><code>{@link #PhotoStackView_shadow_color com.marais.photostackview:shadow_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #PhotoStackView_show_stack_fade com.marais.photostackview:show_stack_fade}</code></td><td></td></tr>
+           <tr><td><code>{@link #PhotoStackView_show_stack_gap com.marais.photostackview:show_stack_gap}</code></td><td></td></tr>
+           <tr><td><code>{@link #PhotoStackView_spin com.marais.photostackview:spin}</code></td><td></td></tr>
+           <tr><td><code>{@link #PhotoStackView_stack_size_max com.marais.photostackview:stack_size_max}</code></td><td></td></tr>
+           <tr><td><code>{@link #PhotoStackView_stack_size_min com.marais.photostackview:stack_size_min}</code></td><td></td></tr>
+           </table>
+           @see #PhotoStackView_colour
+           @see #PhotoStackView_shadow_color
+           @see #PhotoStackView_show_stack_fade
+           @see #PhotoStackView_show_stack_gap
+           @see #PhotoStackView_spin
+           @see #PhotoStackView_stack_size_max
+           @see #PhotoStackView_stack_size_min
+         */
+        public static final int[] PhotoStackView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#colour}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:colour
+        */
+        public static final int PhotoStackView_colour = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#shadow_color}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:shadow_color
+        */
+        public static final int PhotoStackView_shadow_color = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#show_stack_fade}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:show_stack_fade
+        */
+        public static final int PhotoStackView_show_stack_fade = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#show_stack_gap}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:show_stack_gap
+        */
+        public static final int PhotoStackView_show_stack_gap = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#spin}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+          @attr name android:spin
+        */
+        public static final int PhotoStackView_spin = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#stack_size_max}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+          @attr name android:stack_size_max
+        */
+        public static final int PhotoStackView_stack_size_max = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.marais.photostackview.R.attr#stack_size_min}
+          attribute's value can be found in the {@link #PhotoStackView} array.
+          @attr name android:stack_size_min
+        */
+        public static final int PhotoStackView_stack_size_min = 1;
+    };
 }
